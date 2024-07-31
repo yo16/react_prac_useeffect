@@ -1,0 +1,2 @@
+# react_prac_useeffect
+useEffectでうまく更新できないケースがあるのでその実験と解消方法の模索

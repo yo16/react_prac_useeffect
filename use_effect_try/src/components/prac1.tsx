@@ -80,18 +80,18 @@ export function Prac1() {
     }
     function handleOnButton3PlusClick() {
         aryPrac3[0].pushParam(3);
-        setAryPrac3([...aryPrac3]);     // これなら動く、なぜかaryPrac4のuseEffectも動く
+        setAryPrac3([...aryPrac3]);     // これなら動く
     }
 
     // 配列の変数は変わらないが、要素数が増えた時は？
     useEffect(()=>{
-        console.log("aryPrac4 is updated!");    // → 初回だけ発動する、なぜかaryPrac3のuseEffectも動く
+        console.log("aryPrac4 is updated!");    // → 初回だけ発動する
         console.log(aryPrac4);
         //setCounter(counter+1);        // これをやると無限ループになる・・・なぜ？
     }), [aryPrac4];
     function handleOnButton4Click() {
         aryPrac4.push(new ClsPrac2(4));
-        setAryPrac4(aryPrac3);
+        setAryPrac4(aryPrac4);
     }
 
 
